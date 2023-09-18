@@ -21,7 +21,7 @@ st.set_page_config(layout="wide")
 current_date = datetime.strptime('2023-02-28 09:00:00', '%Y-%m-%d %H:%M:%S')
 # current_date = pd.to_datetime(datetime.utcnow()).floor('H')
 st.title(f'Taxi demand prediction 1 🚕')
-st.header(f'{current_date} UTC')
+# st.header(f'{current_date} UTC')
 
 progress_bar = st.sidebar.header('⚙️ Working Progress')
 progress_bar = st.sidebar.progress(0)
@@ -116,10 +116,6 @@ next_hour_predictions_ready =  False if predictions_df[predictions_df.pickup_hou
    
 prev_hour_predictions_ready =  False if predictions_df[predictions_df.pickup_hour == (current_date - timedelta(hours=1))].empty else True
    
-
-st.header(current_date)
-st.header(next_hour_predictions_ready)
-st.header(prev_hour_predictions_ready)
 
 
 if next_hour_predictions_ready:
