@@ -117,6 +117,9 @@ next_hour_predictions_ready = \
 prev_hour_predictions_ready = \
     False if predictions_df[predictions_df.pickup_hour == (current_date - timedelta(hours=1))].empty else True
 
+st.header(current_date)
+
+
 if next_hour_predictions_ready:
     # predictions for the current hour are available
     predictions_df = predictions_df[predictions_df.pickup_hour == current_date]
