@@ -7,10 +7,12 @@ from src.paths import PARENT_DIR
 load_dotenv(PARENT_DIR / '.env')
 
 HOPSWORKS_PROJECT_NAME = 'sai_project_1'
-try:
-    HOPSWORKS_API_KEY = os.environ['HOPSWORKS_API_KEY']
-except:
-    raise Exception('Create an .env file on the project root with the HOPSWORKS_API_KEY')
+# try:
+#     HOPSWORKS_API_KEY = os.environ['HOPSWORKS_API_KEY']
+# except:
+#     raise Exception('Create an .env file on the project root with the HOPSWORKS_API_KEY')
+HOPSWORKS_API_KEY = jw7nD5pVpCMjt7xz.JoUh1fdEUFNCJyUa5n7VsdR67C9PZCyVonuZ4eNafUCJzMJbDt6V0LxfyghCD794
+
 
 FEATURE_GROUP_NAME = 'final_time_series_hourly_feature_group'
 FEATURE_GROUP_VERSION = 1
