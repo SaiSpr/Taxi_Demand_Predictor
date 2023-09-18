@@ -7,7 +7,7 @@ import pandas as pd
 import streamlit as st
 import geopandas as gpd
 import pydeck as pdk
-
+ 
 from src.inference import (
     load_predictions_from_store,
     load_batch_of_features_from_store
