@@ -112,10 +112,10 @@ with st.spinner(text="Fetching model predictions from the store"):
 
 # Here we are checking the predictions for the current hour have already been computed
 # and are available
-next_hour_predictions_ready = \
-    False if predictions_df[predictions_df.pickup_hour == current_date].empty else True
-prev_hour_predictions_ready = \
-    False if predictions_df[predictions_df.pickup_hour == (current_date - timedelta(hours=1))].empty else True
+next_hour_predictions_ready =  False if predictions_df[predictions_df.pickup_hour == current_date].empty else True
+   
+prev_hour_predictions_ready =  False if predictions_df[predictions_df.pickup_hour == (current_date - timedelta(hours=1))].empty else True
+   
 
 st.header(current_date)
 
