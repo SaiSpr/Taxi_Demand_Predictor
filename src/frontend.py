@@ -126,8 +126,7 @@ elif prev_hour_predictions_ready:
     current_date = current_date - timedelta(hours=1)
     st.subheader('⚠️ The most recent data is not yet available. Using last hour predictions')
 else:
-    raise Exception('Features are not available for the last 2 hours. Is your feature \
-                    pipeline up and running? 🤔')
+    raise Exception('Features are not available for the last 2 hours. Is your feature pipeline up and running? 🤔')
 
 
 with st.spinner(text="Preparing data to plot"):
