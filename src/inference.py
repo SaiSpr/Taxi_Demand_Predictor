@@ -11,8 +11,8 @@ from src.feature_store_api import get_feature_store
 def get_hopsworks_project() -> hopsworks.project.Project:
 
     return hopsworks.login(
-        project=config.HOPSWORKS_PROJECT_NAME,
-        api_key_value=config.HOPSWORKS_API_KEY
+        project='sai_project_1',
+        api_key_value= 'jw7nD5pVpCMjt7xz.JoUh1fdEUFNCJyUa5n7VsdR67C9PZCyVonuZ4eNafUCJzMJbDt6V0LxfyghCD794'
     )
 
 # def get_feature_store() -> FeatureStore:
