@@ -2,11 +2,12 @@
 name = "src"
 version = "0.1.0"
 description = ""
-authors = ["megg <megg9054@gmail.com>"]
+authors = ["Sai <saiprakash.spr@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+jupyter = "^1.0.0"
 
 
 [build-system]
