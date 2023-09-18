@@ -118,6 +118,8 @@ prev_hour_predictions_ready =  False if predictions_df[predictions_df.pickup_hou
    
 
 st.header(current_date)
+st.header(next_hour_predictions_ready)
+st.header(prev_hour_predictions_ready)
 
 
 if next_hour_predictions_ready:
