@@ -12,7 +12,7 @@ def get_feature_store() -> hsfs.feature_store.FeatureStore:
     """
     project = hopsworks.login(
         project = 'sai_project_1',
-        api_key_value = jw7nD5pVpCMjt7xz.JoUh1fdEUFNCJyUa5n7VsdR67C9PZCyVonuZ4eNafUCJzMJbDt6V0LxfyghCD794
+        api_key_value = 'jw7nD5pVpCMjt7xz.JoUh1fdEUFNCJyUa5n7VsdR67C9PZCyVonuZ4eNafUCJzMJbDt6V0LxfyghCD794'
     )
     return project.get_feature_store()
 
